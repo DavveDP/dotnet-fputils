@@ -1,0 +1,8 @@
+{
+    "name" : "com.david-riley.dotnet-fputils",
+    "version" : "0.0.1",
+    "displayName": "Dotnet Functional Programming Utils",
+    "author": {
+        "name": "David Riley"
+    }
+}
