@@ -4,11 +4,14 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[CustomPropertyDrawer(typeof(SerializedOption<>))]
-public class SerializedOptionDrawer : PropertyDrawer
+namespace FPUtils.Editor
 {
-    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    [CustomPropertyDrawer(typeof(SerializedOption<>))]
+    public class SerializedOptionDrawer : PropertyDrawer
     {
-        EditorGUI.PropertyField(position, property.FindPropertyRelative("value"));
+        public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+        {
+            EditorGUI.PropertyField(position, property.FindPropertyRelative("value"));
+        }
     }
 }
